@@ -7,7 +7,14 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.hsyncnblk.newsapp.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" />
+        android:label="ArticleFragment" >
+
+        <argument
+            android:name="article"
+            app:argType="com.hsyncnblk.newsapp.models.Article">
+
+        </argument>
+    </fragment>
     <fragment
         android:id="@+id/favoriteFragment2"
         android:name="com.hsyncnblk.newsapp.ui.fragments.FavoriteFragment"
