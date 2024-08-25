@@ -16,11 +16,7 @@ import com.hsyncnblk.newsapp.models.Article
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
     inner class ArticleViewHolder(val binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root)
-    lateinit var articleImage: ImageView
-    lateinit var articleSource: TextView
-    lateinit var articleTitle: TextView
-    lateinit var articleDescription: TextView
-    lateinit var articleDateTime: TextView
+
 
     private val differCallback = object : DiffUtil.ItemCallback<Article>(){
         override fun areItemsTheSame(oldItem: Article, newItem: Article): Boolean {
